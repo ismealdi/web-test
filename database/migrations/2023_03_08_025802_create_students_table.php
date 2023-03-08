@@ -16,7 +16,7 @@ return new class extends Migration
             $table->char('nis', 12)->unique();
             $table->string('name');
             $table->date('dob');
-            $table->enum('gender', ["Pria", "Perempuan"])->default("Pria");
+            $table->enum('gender', ["Pria", "Wanita"])->default("Pria");
             $table->tinyInteger('group')->default(0);
             $table->string('parent_name');
             $table->softDeletes();
