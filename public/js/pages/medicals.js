@@ -42,7 +42,8 @@ var modalFormAdd = new bootstrap.Modal('#addDialog');
 
 function resetFormLevel() {
     $("#errorAddDialog").text("");
-    $('#formAdd').trigger("reset");    
+    $('#formAdd').trigger("reset");  
+    $('#student_id').val(null).trigger('change');   
 }
 
 document.getElementById('addDialog').addEventListener('hide.bs.modal', event => {

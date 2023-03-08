@@ -50,7 +50,9 @@ var modalFormAdd = new bootstrap.Modal('#addDialog');
 
 function resetFormLevel() {
     $("#errorAddDialog").text("");
-    $('#formAdd').trigger("reset");    
+    $('#formAdd').trigger("reset");   
+    $('#gender').val(null).trigger('change');
+    $('#group').val(null).trigger('change'); 
 }
 
 document.getElementById('addDialog').addEventListener('hide.bs.modal', event => {
